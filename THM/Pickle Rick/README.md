@@ -2,13 +2,13 @@
 
 [Link alla macchina](https://tryhackme.com/room/picklerick)
 
-###Enumeration
+#Enumeration
 
 Partiamo con la fase di enumeration usando nmap (nmap -sV IP), nikto (nikto -h IP) e dirbuster (dirb http://IP). Con nikto scopriamo che c'è una pagina di login a /login.php e con dirbuster troviamo il file robots.txt di interessanti.
 
 Recandoci sulla pagina web non si trova nulla di interessante. Proviamo ad ispezionare la pagina e leggere il codice e troviamo uno Username. Proviamo a visitare la pagina /robots.txt e troviamo una stringa strana che potrebbe funziona da password.
 
-###Exploitation
+#Exploitation
 
 Andiamo sulla pagina /login.php, proviamo ad inserire i dati e... SBAM! siamo dentro.
 
