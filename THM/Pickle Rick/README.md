@@ -1,6 +1,6 @@
 # Writeup di Pickle Rick di TryHackMe
 
-[Link alla macchina](https://tryhackme.com/room/picklerick)
+## [Link alla macchina](https://tryhackme.com/room/picklerick)
 
 ### Enumeration
 
