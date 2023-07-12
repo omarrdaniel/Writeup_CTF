@@ -1,6 +1,6 @@
 ##Writeup di Pickle Rick di TryHackMe
 
-(Link alla macchina)[https://tryhackme.com/room/picklerick]
+[Link alla macchina](https://tryhackme.com/room/picklerick)
 
 Partiamo con la fase di enumeration usando nmap (nmap -sV IP), nikto (nikto -h IP) e dirbuster (dirb http://IP). Con nikto scopriamo che c'è una pagina di login a /login.php e con dirbuster troviamo il file robots.txt di interessanti.
 
