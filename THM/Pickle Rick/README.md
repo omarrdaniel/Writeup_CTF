@@ -21,6 +21,7 @@ Spostiamoci alla root directory con cd ../../../../; ls -lah; pwd, stampiamo la 
 
 Inziamo dalla cartella home: spostandoci all'interno di /home troviamo altre due subdirectory, "rick" e "ubuntu". Rick sembra quella più interessante. Se listiamo i file all'interno di questa folder troviamo un file chiamato "second ingredient". Visto che cat è bloccato, proviamo con less "second ingredient" (usiamo le virgolette siccome c'è uno spazio nel nome). Siamo riusciti a recuperare il secondo ingrediente.
 
+### Privilege Escalation
 Ora concentriamoci sulla cartella di root. Con il comando sudo -l per vedere quali privilegi abbiamo (ci serve fare Privilege Escalation per accedere alla cartella root). Buona notizia, tutti i comandi sudo possono essere eseguiti senza password (ALL NOPASSWD: ALL)!.
 Listiamo i file all'interno della cartella root con sudo ls /root e troviamo il file "3rd.txt". Sempre tramite il comando less leggiamo il file e troviamo il terzo e ultimo ingrediente.
 
