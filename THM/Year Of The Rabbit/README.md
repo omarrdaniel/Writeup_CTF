@@ -1,4 +1,4 @@
-# Writeup di Year of the Rabbit di TryHackMe
+# Writeup di Year of the Rabbit di TryHackMe (on THM)
 
 ## [Link alla macchina](https://tryhackme.com/room/yearoftherabbit)
 
