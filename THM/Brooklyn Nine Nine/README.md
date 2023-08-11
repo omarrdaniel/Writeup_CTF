@@ -19,6 +19,7 @@ Hydra ci da buone notizie e scopriamo la password che ci servirà per accedere a
 Con il comando sudo -l vediamo che l'utente jake ha i permessi di sudo sul comando usr/bin/less. Molto semplicemente allora potremmo dare il comando "sudo usr/bin/less /root/root.txt" per leggere il contenuto e ottenere la flag root e completare la macchina. Se volessimo invece guadagnarci una shell come root, facendo un giro su GTFOBins vediamo che è possibile ottenere una root shell a partire da /usr/bin/less se eseguito come sudo. I comandi sono i seguenti: "sudo less /etc/profile --> !/bin/sh". Ottenuta la root shell, ci basterà leggere il file root.txt
 
 _________________________________________________________________________________________________________________________________________
+## Metodo 2
 Così avremmo completato la macchina, ma il creatore ci dice che ci sono due modi per ottenere le flag e completarla, quindi proviamo anche il secondo.
 
 ### HTTP
