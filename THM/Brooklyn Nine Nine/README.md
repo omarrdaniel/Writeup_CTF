@@ -1,9 +1,8 @@
 # Brooklyn Nine Nine Writeup
 
-## Link alla macchina
+## [Link alla macchina](https://tryhackme.com/room/brooklynninenine)
 
 ## Metodo 1
-
 ### Enumeration
 Iniziamo facendo un rapido scan con nmap e notiamo che ci sono 3 servizi aperti: ssh, tcp e http. Leggiamo inoltre che il login anonimo con ftp è abilitato.
 
