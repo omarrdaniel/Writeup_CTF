@@ -1,4 +1,4 @@
-# Writeup di Brooklyn Nine Nine TryHackMe
+# Writeup di Brooklyn Nine Nine di TryHackMe
 
 ## [Link alla macchina](https://tryhackme.com/room/brooklynninenine)
 
