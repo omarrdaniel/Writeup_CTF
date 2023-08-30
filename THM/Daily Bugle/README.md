@@ -11,6 +11,7 @@ Tramite il tool joomscan troviamo la versione del CMS.
 ### Exploitation
 Cercando un po' sul web e su exploit-DB/searchsploit notiamo che questa versione è vulnerabile ad SQL Injection. L'exploit su Exploit-DB ci spiega come farla tramite SQLmap, ma cercando un po' troviamo un PoC in python su github. Lo scarichiamo e lo lanciamo per ottenere lo username Jonah (superuser) e la relativa password hash. Ora ci tocca usare john the ripper per craccare questa password... dopo un tempo sconsiderevole e grazie a rockyou.txt siamo riusciti a trovare la password.
 Effettuiamo il login su Joomla e cerchiamo come caricare una reverse shell.
+### Rev Shell
 Con un po' di ricerche scopriamo che andando su Extensions -> Templates -> Templates, selezioniamo un template e sulla destra troviamo la lista dei file. Modifichiamo il file index.php e ci mettiamo la nostra reverse shell (nel mio caso ho usato quella di PentestMonkey). Ricordiamoci di modificare i parametri relativi alla nostra macchina.
 Sull'attack box lanciamo il comando nc -lvp <port> per metterci in ascolto e facciamo una richiesta a http://private_ip/index.php e vediamo che riusciamo a stabilire una connessione con la nostra macchina.
 Esiste un altro utente ma non abbiamo il permesso per accedere alla sua home.
